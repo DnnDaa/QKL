@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-06-13 00:08:28
+# 创建时间：2023-06-13 14:51:17
 # 使用模版：V2RaySE 默认模版
 # 节点数量：10
 ####################################
@@ -22,16 +22,16 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"CD400-Tls","type":"vmess","server":"cd.xfzj6528.top","port":443,"cipher":"auto","uuid":"f0d55fe9-0588-4cc9-b30b-b8de7de37535","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"CD400-Reality\r","type":"vless","server":"38.55.98.103","port":41008,"udp":true,"uuid":"43ee5616-cd35-44d0-9f52-ad64d540d090","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"8uwDR39RkgPK5uC_WouD0Jg6BRjijJxprOYXVfD38mg","short-id":"b0ef3f81"},"client-fingerprint":"chrome"}
-  - {"name":"DC800-Tls","type":"vmess","server":"dc.xfzj6528.top","port":443,"cipher":"auto","uuid":"2f622200-deff-43a7-b27a-cb510825f62c","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ray"}}
-  - {"name":"DC800-Reality\r","type":"vless","server":"38.55.98.143","port":433,"udp":true,"uuid":"7619f88d-9d0a-4268-dfc7-f38122417d44","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"3ruxmqj73crpS2NNjtZ0j7ThpGgv4CqWRjAZFI-7_QM","short-id":"00b3cbd2"},"client-fingerprint":"chrome"}
-  - {"name":"AC-1000-reality\r","type":"vless","server":"85.8.181.62","port":18411,"udp":true,"uuid":"cb44409a-e112-4cda-8f55-3f7192be0cbe","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"_mXCi2lXGuUr-CkW81si3eyyMRVn7f0y7UWxw9Ok1Rs","short-id":"400ad9b2"},"client-fingerprint":"chrome"}
+  - {"name":"CD400-Tls","type":"vmess","server":"cd.xfzj6528.top","port":443,"cipher":"auto","uuid":"cd16fcbc-3663-4ea2-8e42-4dc2b54f57ed","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ray"}}
+  - {"name":"CD400-Reality","type":"vless","server":"38.55.98.103","port":41008,"udp":true,"uuid":"09e0b572-d2a5-4048-ec47-9fc3233742f9","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"joa30G3l9ZA_kp_ywrxa0rUihnqECuaNlRRTDPcthSk","short-id":"398ba5f8"},"client-fingerprint":"chrome"}
+  - {"name":"DC800-Tls","type":"vmess","server":"dc.xfzj6528.top","port":443,"cipher":"auto","uuid":"2f622200-deff-43a7-b27a-cb510825f62c","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ray"}}
+  - {"name":"DC800-Reality","type":"vless","server":"38.55.98.143","port":433,"udp":true,"uuid":"7619f88d-9d0a-4268-dfc7-f38122417d44","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"3ruxmqj73crpS2NNjtZ0j7ThpGgv4CqWRjAZFI-7_QM","short-id":"00b3cbd2"},"client-fingerprint":"chrome"}
+  - {"name":"AC-1000-reality","type":"vless","server":"85.8.181.62","port":18411,"udp":true,"uuid":"cb44409a-e112-4cda-8f55-3f7192be0cbe","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"_mXCi2lXGuUr-CkW81si3eyyMRVn7f0y7UWxw9Ok1Rs","short-id":"400ad9b2"},"client-fingerprint":"chrome"}
   - {"name":"AE-2000-Tls","type":"vmess","server":"ae.xfzj6528.top","port":443,"cipher":"auto","uuid":"8128e586-2b6f-4b70-f176-b7f408ac3b04","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ray"}}
-  - {"name":"AE-2000-reality\r","type":"vless","server":"37.123.193.116","port":10214,"udp":true,"uuid":"d56b74c4-a6f6-42fd-8956-4fc640f52238","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"R99IfPznr204ohxy9vpjrgnuIV9kQopUfNNR7i8Yh3A","short-id":"3a45143c"},"client-fingerprint":"chrome"}
-  - {"name":"CA-500-Reality\r","type":"vless","server":"45.159.51.238","port":20438,"udp":true,"uuid":"fd5b7af0-e6c6-4d45-8a8e-bd29687eb575","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"D5GOoijWI9RMb5WX7a3u0k4tUndCBgazdtb3_wI_wV8","short-id":"10c7d389"},"client-fingerprint":"chrome"}
+  - {"name":"AE-2000-reality","type":"vless","server":"37.123.193.116","port":10214,"udp":true,"uuid":"d56b74c4-a6f6-42fd-8956-4fc640f52238","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"R99IfPznr204ohxy9vpjrgnuIV9kQopUfNNR7i8Yh3A","short-id":"3a45143c"},"client-fingerprint":"chrome"}
+  - {"name":"CA-500-Reality","type":"vless","server":"45.159.51.238","port":20438,"udp":true,"uuid":"fd5b7af0-e6c6-4d45-8a8e-bd29687eb575","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"D5GOoijWI9RMb5WX7a3u0k4tUndCBgazdtb3_wI_wV8","short-id":"10c7d389"},"client-fingerprint":"chrome"}
   - {"name":"DA-2000-Tls","type":"vmess","server":"da.xfzj6528.top","port":443,"cipher":"auto","uuid":"722fa314-1d99-4001-e421-dacb9877d156","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ray"}}
-  - {"name":"DA-2000-reality\r","type":"vless","server":"116.206.94.135","port":51646,"udp":true,"uuid":"e5e1a2cb-d7bf-41be-cfe2-29bc653499ce","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM"},"client-fingerprint":"chrome"}
+  - {"name":"DA-2000-reality","type":"vless","server":"116.206.94.135","port":51646,"udp":true,"uuid":"e5e1a2cb-d7bf-41be-cfe2-29bc653499ce","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM"},"client-fingerprint":"chrome"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -39,15 +39,15 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - CD400-Tls
-      - "CD400-Reality\r"
+      - CD400-Reality
       - DC800-Tls
-      - "DC800-Reality\r"
-      - "AC-1000-reality\r"
+      - DC800-Reality
+      - AC-1000-reality
       - AE-2000-Tls
-      - "AE-2000-reality\r"
-      - "CA-500-Reality\r"
+      - AE-2000-reality
+      - CA-500-Reality
       - DA-2000-Tls
-      - "DA-2000-reality\r"
+      - DA-2000-reality
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -55,15 +55,15 @@ proxy-groups:
     tolerance: 50
     proxies:
       - CD400-Tls
-      - "CD400-Reality\r"
+      - CD400-Reality
       - DC800-Tls
-      - "DC800-Reality\r"
-      - "AC-1000-reality\r"
+      - DC800-Reality
+      - AC-1000-reality
       - AE-2000-Tls
-      - "AE-2000-reality\r"
-      - "CA-500-Reality\r"
+      - AE-2000-reality
+      - CA-500-Reality
       - DA-2000-Tls
-      - "DA-2000-reality\r"
+      - DA-2000-reality
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -71,60 +71,60 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - CD400-Tls
-      - "CD400-Reality\r"
+      - CD400-Reality
       - DC800-Tls
-      - "DC800-Reality\r"
-      - "AC-1000-reality\r"
+      - DC800-Reality
+      - AC-1000-reality
       - AE-2000-Tls
-      - "AE-2000-reality\r"
-      - "CA-500-Reality\r"
+      - AE-2000-reality
+      - CA-500-Reality
       - DA-2000-Tls
-      - "DA-2000-reality\r"
+      - DA-2000-reality
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - CD400-Tls
-      - "CD400-Reality\r"
+      - CD400-Reality
       - DC800-Tls
-      - "DC800-Reality\r"
-      - "AC-1000-reality\r"
+      - DC800-Reality
+      - AC-1000-reality
       - AE-2000-Tls
-      - "AE-2000-reality\r"
-      - "CA-500-Reality\r"
+      - AE-2000-reality
+      - CA-500-Reality
       - DA-2000-Tls
-      - "DA-2000-reality\r"
+      - DA-2000-reality
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - CD400-Tls
-      - "CD400-Reality\r"
+      - CD400-Reality
       - DC800-Tls
-      - "DC800-Reality\r"
-      - "AC-1000-reality\r"
+      - DC800-Reality
+      - AC-1000-reality
       - AE-2000-Tls
-      - "AE-2000-reality\r"
-      - "CA-500-Reality\r"
+      - AE-2000-reality
+      - CA-500-Reality
       - DA-2000-Tls
-      - "DA-2000-reality\r"
+      - DA-2000-reality
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - CD400-Tls
-      - "CD400-Reality\r"
+      - CD400-Reality
       - DC800-Tls
-      - "DC800-Reality\r"
-      - "AC-1000-reality\r"
+      - DC800-Reality
+      - AC-1000-reality
       - AE-2000-Tls
-      - "AE-2000-reality\r"
-      - "CA-500-Reality\r"
+      - AE-2000-reality
+      - CA-500-Reality
       - DA-2000-Tls
-      - "DA-2000-reality\r"
+      - DA-2000-reality
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,15 +148,15 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - CD400-Tls
-      - "CD400-Reality\r"
+      - CD400-Reality
       - DC800-Tls
-      - "DC800-Reality\r"
-      - "AC-1000-reality\r"
+      - DC800-Reality
+      - AC-1000-reality
       - AE-2000-Tls
-      - "AE-2000-reality\r"
-      - "CA-500-Reality\r"
+      - AE-2000-reality
+      - CA-500-Reality
       - DA-2000-Tls
-      - "DA-2000-reality\r"
+      - DA-2000-reality
 
 rules:
 # 本地/局域网地址
