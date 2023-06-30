@@ -20,9 +20,8 @@ proxies:
   - {"name":"CD400-Reality","type":"vless","server":"38.55.98.103","port":41008,"udp":true,"uuid":"09e0b572-d2a5-4048-ec47-9fc3233742f9","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"joa30G3l9ZA_kp_ywrxa0rUihnqECuaNlRRTDPcthSk","short-id":"398ba5f8"},"client-fingerprint":"chrome"}
   - {"name":"DC800-Tls","type":"vmess","server":"dc.xfzj6528.top","port":443,"cipher":"auto","uuid":"4664106f-1351-4511-ff3f-0fc3cd2c4b6a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"DC800-Reality","type":"vless","server":"38.55.98.143","port":40629,"udp":true,"uuid":"2143af6b-e7ca-4c10-9687-c3a134526ff9","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"gOP8z4v_g1yET4Oc3GJpOS2oQXu_zLbRcI0kujMqsRA","short-id":"963316e0"},"client-fingerprint":"chrome"}
-  - {"name":"AE-2000-Tls","type":"vmess","server":"ae.xfzj6528.top","port":443,"cipher":"auto","uuid":"8128e586-2b6f-4b70-f176-b7f408ac3b04","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ray"}}
-  - {"name":"AE-2000-reality","type":"vless","server":"37.123.193.116","port":10214,"udp":true,"uuid":"d56b74c4-a6f6-42fd-8956-4fc640f52238","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"R99IfPznr204ohxy9vpjrgnuIV9kQopUfNNR7i8Yh3A","short-id":"3a45143c"},"client-fingerprint":"chrome"}
-  - {"name":"CA-500-Reality","type":"vless","server":"45.159.51.238","port":20438,"udp":true,"uuid":"fd5b7af0-e6c6-4d45-8a8e-bd29687eb575","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"D5GOoijWI9RMb5WX7a3u0k4tUndCBgazdtb3_wI_wV8","short-id":"10c7d389"},"client-fingerprint":"chrome"}
+  - {"name":"AE-2000-Tls","type":"vmess","server":"ae.xfzj6528.top","port":443,"cipher":"auto","uuid":"627e05f1-b57a-4534-d7ab-9816ab42da40","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ray"}}
+  - {"name":"AE-2000-reality","type":"vless","server":"37.123.193.116","port":50791,"udp":true,"uuid":"58f94ee2-92b7-47cb-f83f-462efda08ae7","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"nDo6x2njHzsCWclPeKrYWGXy6eL8NYi3NAEY_Gf-Jl8","short-id":"b035011c"},"client-fingerprint":"chrome"}
   - {"name":"DA-2000-Tls","type":"vmess","server":"da.xfzj6528.top","port":443,"cipher":"auto","uuid":"722fa314-1d99-4001-e421-dacb9877d156","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ray"}}
   - {"name":"DA-2000-reality","type":"vless","server":"116.206.94.135","port":51646,"udp":true,"uuid":"e5e1a2cb-d7bf-41be-cfe2-29bc653499ce","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM"},"client-fingerprint":"chrome"}
 proxy-groups:
@@ -42,7 +41,6 @@ proxy-groups:
       - DC800-Reality
       - AE-2000-Tls
       - AE-2000-reality
-      - CA-500-Reality
       - DA-2000-Tls
       - DA-2000-reality
   - name: ♻️ 自动选择
@@ -57,7 +55,6 @@ proxy-groups:
       - DC800-Reality
       - AE-2000-Tls
       - AE-2000-reality
-      - CA-500-Reality
       - DA-2000-Tls
       - DA-2000-reality
   - name: 🔗 链式代理
