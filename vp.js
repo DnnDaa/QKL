@@ -37,7 +37,7 @@ argument = url=http://127.0.0.1:7122&name=花里胡哨才是生产力&icon=bolt.
   panel.title = params.name || 'Server Info';
   panel.icon = params.icon || 'bolt.horizontal.icloud.fill';
   panel["icon-color"] = shifts[col];
-  panel.content = `CPU占用:  ${cpuUsage}    |  内存占用:    ${memUsage}\n` +
+  panel.content = `CPU占用: ${cpuUsage} | 内存占用:    ${memUsage}\n` +
     `下载: ${bytesToSize(outTraffic)}  |  上传: ${bytesToSize(inTraffic)}\n` +
     `流量合计: ${trafficSize}\n` +
     `运行时间: ${formatUptime(jsonData.uptime)}\n` +
