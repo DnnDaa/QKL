@@ -1,0 +1,77 @@
+
+<?php
+$message = '';
+// 设置 API 的请求地址
+$request = "瓦工api地址";
+
+// 获取 API 返回的 JSON 数据
+$serviceInfo = json_decode(file_get_contents($request), true);
+
+// 如果成功获取到数据，则输出指定字段到控制台
+if ($serviceInfo !== null) {
+    // 检查所需字段是否存在于返回的数据中
+    if (isset($serviceInfo['node_location']) && isset($serviceInfo['data_counter']) && isset($serviceInfo['plan_monthly_data'])) {
+        $node_location = $serviceInfo['node_location'];
+        $data_counter = $serviceInfo['data_counter'];
+        $plan_monthly_data = $serviceInfo['plan_monthly_data'];
+
+        // 将 B 转换为 GB
+        $plan_monthly_data = $plan_monthly_data / (1024 * 1024 * 1024);
+        $data_counter = number_format($data_counter / (1024 * 1024 * 1024), 2);
+
+        // 替换字段名并输出
+        $message = "机房位置: $node_location\n";
+        $message .= "已用流量: $data_counter GB / $plan_monthly_data GB\n";
+      
+        $botToken = "TGtoken";
+        $chatId = "chatid";
+
+        // 准备发送消息的 URL
+        $telegramUrl = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=" . urlencode($message);
+        
+        // 使用 cURL 发送消息
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, $telegramUrl);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $result = curl_exec($curl);
+        curl_close($curl);
+
+        // 检查是否成功发送消息
+        if (!$result) {
+            echo "Failed to send message to Telegram bot.";
+        } else {
+            echo "Message sent successfully!";
+        }
+
+// 发送消息到 Bark
+        $barkUrl = ""; // 你的 Bark URL
+        $title = "瓦工流量提醒"; // Bark 通知的标题
+
+        $barkMessage = urlencode("$title\n$message");
+
+        // 使用 cURL 发送消息到 Bark
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $barkUrl . "/" . $barkMessage,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_CUSTOMREQUEST => "GET",
+        ));
+        $resultBark = curl_exec($curl);
+        curl_close($curl);
+
+        // 检查是否成功发送消息到 Bark
+        if (!$resultBark) {
+            echo "Failed to send message to Bark.";
+        } else {
+            echo "Message sent to Bark successfully!";
+        }
+        
+    } else {
+        echo "Required fields are missing in the API response.\n";
+    }
+} else {
+    echo "Failed to retrieve data from the API.\n";
+}
+
+?>
